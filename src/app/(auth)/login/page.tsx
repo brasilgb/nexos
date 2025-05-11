@@ -18,7 +18,7 @@ export default async function LoginPage() {
           <h2 className="text-xl font-bold">Boas Vindas</h2>
           <CardDescription>Faça seu login com email e senha.</CardDescription>
           <div className='text-xs text-gray-500 py-4 w-52'>
-            Dados de sessão
+            Dados de sessão 
             <p>
               {JSON.stringify(session)}
             </p>
