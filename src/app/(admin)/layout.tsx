@@ -24,7 +24,7 @@ export default async function AdminLayout({
         <SidebarProvider>
             <AppSidebar />
             <div className='min-h-screen w-full flex flex-col'>
-                <SidebarTrigger className='absolute' />
+                <SidebarTrigger className='absolute top-3' />
                 <Header userName={userName ?? ''} />
                 <main className='flex-grow'>
                     {children}

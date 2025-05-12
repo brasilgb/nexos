@@ -8,8 +8,8 @@ interface HeaderProps {
 
 export default function Header({userName}: HeaderProps) {
   return (
-    <header className='bg-gray-500 flex items-center justify-between px-6'>
-        <div>d</div>
+    <header className='flex items-center justify-between px-6 shadow py-2'>
+        <div></div>
         <div>
             <DropdownUser userName={userName} />
         </div>

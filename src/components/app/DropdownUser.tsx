@@ -14,6 +14,7 @@ import {
     DropdownMenuSubTrigger,
     DropdownMenuTrigger,
 } from "@/src/components/ui/dropdown-menu"
+import { LogOut, User } from "lucide-react";
 import Form from "next/form"
 
 interface DropdowUserProps {
@@ -24,16 +25,18 @@ export function DropdownUser({ userName }: DropdowUserProps) {
     return (
         <DropdownMenu>
             <DropdownMenuTrigger asChild>
-                <Button variant="outline">Open</Button>
+                <Button variant="outline"><User /></Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent className="w-56">
-                <DropdownMenuLabel>{userName}</DropdownMenuLabel>
+                <DropdownMenuLabel className="flex items-center gap-2"><User className="h-4 w-4" />{userName}</DropdownMenuLabel>
                 <DropdownMenuSeparator />
-                <DropdownMenuItem>Profile</DropdownMenuItem>
+                <DropdownMenuItem className="flex items-center gap-2">
+                    <User className="h-4 w-4" />Profile
+                    </DropdownMenuItem>
                 <DropdownMenuSeparator />
                 <DropdownMenuItem>
                     <Form action={logoutAction}>
-                        <button>Sair</button>
+                        <button className="flex items-center gap-2"><LogOut className="h-4 w-4" /> Sair</button>
                     </Form>
                 </DropdownMenuItem>
             </DropdownMenuContent>

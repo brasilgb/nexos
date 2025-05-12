@@ -9,7 +9,7 @@ export default function LandingPage() {
     return (
         <div className="flex min-h-screen flex-col">
             <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-                <div className="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0">
+                <div className="container mx-auto flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0">
                     <div className="flex gap-2 items-center text-xl font-bold">
                         <Zap className="h-6 w-6 text-primary" />
                         <span>OrdemPro</span>
@@ -34,8 +34,8 @@ export default function LandingPage() {
                             >
                                 Preços
                             </Link>
-                            <Button variant="outline" size="sm" className="mr-2">
-                                Entrar
+                            <Button  variant="outline" size="sm" className="mr-2" asChild>
+                                <Link href="/login">Entrar</Link>
                             </Button>
                             <Button size="sm">
                                 Começar Grátis
@@ -46,7 +46,7 @@ export default function LandingPage() {
                 </div>
             </header>
             <main className="flex-1">
-                <AnimatedSection className="container py-20 md:py-28">
+                <AnimatedSection className="container mx-auto py-20 md:py-28">
                     <div className="flex flex-col items-center text-center">
                         <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
                             Gerencie suas <span className="text-primary">ordens de serviço</span> com facilidade
@@ -67,7 +67,7 @@ export default function LandingPage() {
                     </div>
                 </AnimatedSection>
 
-                <AnimatedSection className="container py-8 md:py-12 lg:py-16">
+                <AnimatedSection className="container mx-auto py-8 md:py-12 lg:py-16">
                     <div className="relative overflow-hidden rounded-xl border bg-background shadow-xl">
                         <Image
                             src="/placeholder.svg?height=720&width=1280"
@@ -80,7 +80,7 @@ export default function LandingPage() {
                     </div>
                 </AnimatedSection>
 
-                <AnimatedSection id="recursos" className="container py-16 md:py-20">
+                <AnimatedSection id="recursos" className="container mx-auto py-16 md:py-20">
                     <div className="text-center mb-12">
                         <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Recursos Poderosos</h2>
                         <p className="mt-4 text-muted-foreground md:text-lg">
@@ -121,7 +121,7 @@ export default function LandingPage() {
                 </AnimatedSection>
 
                 <AnimatedSection id="como-funciona" className="bg-muted py-16 md:py-20">
-                    <div className="container">
+                    <div className="container mx-auto">
                         <div className="text-center mb-12">
                             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Como Funciona</h2>
                             <p className="mt-4 text-muted-foreground md:text-lg">
@@ -178,7 +178,7 @@ export default function LandingPage() {
                     </div>
                 </AnimatedSection>
 
-                <AnimatedSection className="container py-16 md:py-20">
+                <AnimatedSection className="container mx-auto py-16 md:py-20">
                     <div className="text-center mb-12">
                         <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Depoimentos de Clientes</h2>
                         <p className="mt-4 text-muted-foreground md:text-lg">
@@ -230,7 +230,7 @@ export default function LandingPage() {
                 </AnimatedSection>
 
                 <AnimatedSection id="precos" className="bg-muted py-16 md:py-20">
-                    <div className="container">
+                    <div className="container mx-auto">
                         <div className="text-center mb-12">
                             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Planos e Preços</h2>
                             <p className="mt-4 text-muted-foreground md:text-lg">Escolha o plano ideal para o seu negócio</p>
@@ -325,7 +325,7 @@ export default function LandingPage() {
                     </div>
                 </AnimatedSection>
 
-                <AnimatedSection className="container py-16 md:py-20">
+                <AnimatedSection className="container mx-auto py-16 md:py-20">
                     <div className="rounded-lg border bg-muted p-8 md:p-12 lg:p-16 text-center">
                         <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                             Pronto para transformar sua gestão de serviços?
@@ -347,7 +347,7 @@ export default function LandingPage() {
                 </AnimatedSection>
             </main>
             <footer className="border-t py-8 md:py-12">
-                <div className="container flex flex-col md:flex-row justify-between items-center gap-4">
+                <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
                     <div className="flex gap-2 items-center text-xl font-bold">
                         <Zap className="h-6 w-6 text-primary" />
                         <span>OrdemPro</span>

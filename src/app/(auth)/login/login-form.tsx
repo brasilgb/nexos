@@ -22,7 +22,7 @@ export default function LoginForm() {
                     </AlertDescription>
                 </Alert>
             )}
-            <Form action={formAction} >
+            <Form action={formAction} className='flex flex-col gap-4' >
                 <div>
                     <Label>Email</Label>
                     <Input type="email" name="email" placeholder="eu@exemplo.com" />
